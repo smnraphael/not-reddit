@@ -3,7 +3,7 @@ import './Article.css';
 
 function Article({ article }) {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid d-flex justify-content-center">
       <a className="post" href={`https://www.reddit.com${ article.permalink }`} target="_blank">
         <h3>{ article.title }</h3>
         <p>{ article.subreddit_name_prefixed }</p>

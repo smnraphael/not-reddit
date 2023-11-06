@@ -4,7 +4,7 @@ import logo from '../assets/logo.png';
 
 function NavBar({ handleSearch, subreddit, setSubreddit }) {
   return (
-    <nav className="navbar">
+    <nav className="navbar fixed-top">
         <a className="navbar-brand">
             <img className="logo" src={logo} />
             <h1>NotReddit</h1>
