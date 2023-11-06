@@ -3,6 +3,9 @@
 #### Link:
 https://smnraphael-not-reddit.netlify.app
 
+#### Video Demo:
+https://youtu.be/6kkVxqxdaiU
+
 #### Description:
 This is a Reddit client for Codecademy Front-End Carrer Path project. I made this project to practice props and hooks.
 
