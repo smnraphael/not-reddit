@@ -1,8 +1,19 @@
-# React + Vite
+# NOTREDDIT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Link:
+https://smnraphael-not-reddit.netlify.app
 
-Currently, two official plugins are available:
+#### Description:
+This is a Reddit client for Codecademy Front-End Carrer Path project. I made this project to practice props and hooks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### User experience:
+The user can either input a subreddit in the searchbar, or click in one of the sidebar link to show all the subreddits related. Then the user can click on a subreddit and he will be redirected to Reddit.
+
+#### Technologies:
+- HTML
+- CSS
+- Bootstrap
+- JavaScript
+- React
+- Vite
+- Figma
