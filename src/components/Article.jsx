@@ -13,29 +13,33 @@ function Article({ article }) {
   return (
     <a className="container-fluid" href={`https://www.reddit.com${ article.permalink }`} target="_blank">
       <div className="row">
-        <div className="col">
+        <div className="col col-1 d-flex">
           <div className="ups d-flex flex-column justify-content-center align-items-center">
             <BiSolidUpvote />
             <p>{ article.ups }</p>
           </div>
         </div>
-        <div className="col">
+        <div className="col col-3 d-flex">
           <img className="thumbnail" src={thumbnailSrc} alt="Thumbnail" />
         </div> 
-        <div className="col-6">
-            <div className="content">
+        <div className="col column">
+
+            <div className="content d-flex flex-column">
+
               <div className="title">
-                <h3>{ article.title }</h3>
+                <h4>{ article.title }</h4>
               </div>
-            <div className="meta d-flex flex-row justify-content-between align-items-end">
+              
+              <div className="meta d-flex justify-content-between">
               <div className="author">
-                <p>Posted by <span>{ article.author }</span></p>
+                <p>Posted by <span className="orange">{ article.author }</span></p>
               </div>
-              <div className="comments d-flex flex-row align-items-center">
+              <div className="comments d-flex flex-row align-items-center grey">
                 <BiSolidCommentDetail />
-                <p>{ article.num_comments }</p>
+                <p className="comment">{ article.num_comments }</p>
               </div>
             </div>
+            
           </div>
         </div>
           

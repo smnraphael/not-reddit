@@ -3,7 +3,6 @@ import axios from 'axios';
 import SideBar from './components/SideBar';
 import Article from './components/Article';
 import Spinner from './components/Spinner';
-import NoArticleFound from './components/NoArticleFound';
 import './App.css';
 
 function App() {
@@ -43,7 +42,7 @@ function App() {
         <div className="articles d-flex flex-column align-items-center">
           {loading && <Spinner />}
           {error && <p>Error: {error.message}</p>}
-          {!loading && !error && articles.length === 0 && <NoArticleFound />}
+          {!loading && !error && articles.length === 0 && <p>No article found.</p>}
           {!loading && !error && articles.length > 0 && articles.map((article, id) => <Article article={article.data} key={id} />)}
         </div>
       </div>
