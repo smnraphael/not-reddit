@@ -8,10 +8,10 @@ function Article({ article }) {
 
   const thumb = placeholder;
 
-  const thumbnailSrc = article.thumbnail.includes('default') || article.thumbnail.includes('external') || article.thumbnail.includes('nsfw') || article.thumbnail.includes('self') ? thumb : article.thumbnail;
+  const thumbnailSrc = article.thumbnail.includes('default') || article.thumbnail.includes('external') || article.thumbnail.includes('nsfw') || article.thumbnail.includes('self') || !article.thumbnail ? thumb : article.thumbnail;
 
   return (
-    <a className="container" href={`https://www.reddit.com${ article.permalink }`} target="_blank">
+    <a className="container-fluid" href={`https://www.reddit.com${ article.permalink }`} target="_blank">
       <div className="row">
         <div className="col">
           <div className="ups d-flex flex-column justify-content-center align-items-center">

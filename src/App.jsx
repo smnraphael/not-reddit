@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import NavBar from './components/NavBar';
-import Menu from './components/Menu';
+import SideBar from './components/SideBar';
 import Article from './components/Article';
 import Spinner from './components/Spinner';
 import NoArticleFound from './components/NoArticleFound';
@@ -39,21 +38,15 @@ function App() {
   return (
     <div className="App">
 
-      <NavBar handleSearch={handleSearch} subreddit={subreddit} setSubreddit={setSubreddit} />
-
-      <div className="cont">
-
-        <Menu handleDivClick={handleDivClick} />
-
+      <div>
+        <SideBar handleSearch={handleSearch} subreddit={subreddit} setSubreddit={setSubreddit} handleDivClick={handleDivClick} />
         <div className="articles d-flex flex-column align-items-center">
           {loading && <Spinner />}
           {error && <p>Error: {error.message}</p>}
           {!loading && !error && articles.length === 0 && <NoArticleFound />}
           {!loading && !error && articles.length > 0 && articles.map((article, id) => <Article article={article.data} key={id} />)}
         </div>
-
       </div>
-      
     </div>
   );
 }
